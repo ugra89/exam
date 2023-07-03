@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  max-width: 50px;
+  max-height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#group-div {
+  align-self: center;
+  align-items: start;
+  margin-top: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 50px;
+}
+table {
+  margin-bottom: 30px;
+  tr:nth-child(even) {
+    background-color: #c1bdbd;
+  }
+}
+#logo {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#bill-container {
+  border: 1px solid darkgray;
+  padding: 15px 30px;
+}
+.group {
+  border: 1px solid grey;
+  padding: 10px 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+.btn-view-bills {
+  border: none;
+  background-color: white;
+}
+
+#container {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 20px;
+}
+#groups-container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  gap: 20px;
+}
+p {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+h4 {
+  color: rgb(74, 71, 71);
+  margin-bottom: 10px;
+}
+input {
+  width: 300px;
+}
+h5 {
+  color: gray;
+}
+#btn-register,
+#btn-add-group,
+#btn-add-bill {
+  padding: 5px 10px;
+  background-color: white;
+  width: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
