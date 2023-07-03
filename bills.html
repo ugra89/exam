@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bills</title>
+  </head>
+  <body>
+    <div id="logo">
+      <img src="./assets/5847f9cbcef1014c0b5e48c8.png" alt="" />
+      <h4>Split Bill</h4>
+    </div>
+    <div id="container">
+      <table id="bills-table" style="display: none">
+        <h4>Bills</h4>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody id="bills-body"></tbody>
+      </table>
+      <div id="add-bill-form">
+        <form id="new-bill-form">
+          <p>Add New Bill</p>
+          <label for="amount">Amount:</label>
+          <input type="number" step="0.01" name="amount" id="amount" />
+          <label for="description">Description:</label>
+          <input type="text" name="description" id="description" />
+          <button type="submit" id="btn-add-bill">Add</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="bills.js" defer></script>
+  </body>
+</html>
